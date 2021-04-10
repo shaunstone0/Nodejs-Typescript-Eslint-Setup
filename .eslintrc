@@ -1,0 +1,36 @@
+{
+  "root": true,
+  "parser": "@typescript-eslint/parser",
+  "plugins": [
+    "@typescript-eslint",
+    "security",
+    "simple-import-sort",
+    "prettier"
+  ],
+  "extends": [
+    "plugin:@typescript-eslint/eslint-recommended",
+    "plugin:@typescript-eslint/recommended",
+    "plugin:unicorn/recommended",
+    "plugin:security/recommended",
+    "airbnb-typescript/base",
+    "prettier"
+  ],
+  "rules": {
+    "simple-import-sort/imports": "error",
+    "simple-import-sort/exports": "error",
+    "prettier/prettier": "error",
+    "unicorn/prevent-abbreviations": [
+      "error",
+      {
+        "checkFilenames": false,
+        "checkDefaultAndNamespaceImports": false
+      }
+    ],
+    "unicorn/filename-case": [
+      "error",
+      {
+        "case": "kebabCase"
+      }
+    ]
+  }
+}

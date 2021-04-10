@@ -1,0 +1,16 @@
+{
+  "compileOnSave": false,
+  "compilerOptions": {
+    "baseUrl": "./",
+    "sourceMap": true,
+    "strict": true,
+    "moduleResolution": "node",
+    "outDir": "dist",
+    "typeRoots": ["node_modules/@types"],
+    "noFallthroughCasesInSwitch": true,
+    "noImplicitReturns": true,
+    "strictPropertyInitialization": false,
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true
+  }
+}
